@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p5.js 작품 모음</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* 격자(Grid) 레이아웃 설정: 2칸씩 배치 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 1:1 비율로 두 칸 */
+            gap: 20px; /* 사이 간격 */
+            max-width: 600px; /* 전체 너비 제한 */
+            margin: 0 auto; /* 화면 중앙 정렬 */
+        }
+
+        .project {
+            background-color: #f4f4f4;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            padding: 30px;
+            transition: 0.3s; /* 부드러운 효과 */
+        }
+
+        /* 마우스를 올렸을 때 효과 */
+        .project:hover {
+            background-color: #e8f0fe;
+            border-color: #4285f4;
+            transform: translateY(-5px); /* 살짝 위로 떠오름 */
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            display: block; /* 박스 전체를 클릭 가능하게 */
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>나의 p5.js 작품</h1>
         <p>아래 링크를 클릭하여 다양한 p5.js 프로그램을 감상하세요.</p>
@@ -16,31 +67,29 @@
         
         <div class="project">
             <a href="hw1/index.html">
-                과제#1: 내가 그린 추상화입니다
+                (과제#1)<br>추상화
             </a>
         </div>
 
         <div class="project">
             <a href="hw4/index.html">
-                과제#4: 내가 그린 추상화에 움직임을 부여해 봤습니다
+                (과제#4)<br>움직이는 추상화
             </a>
         </div>
 
         <div class="project">
             <a href="hw2/index.html">
-                과제#2: 내가 그린 자신의 캐리커처입니다
+                (과제#2)<br>캐리커처
             </a>
         </div>
 
         <div class="project">
             <a href="hw3/index.html">
-                과제#3: 자신의 캐리커처에 움직임을 부여해 봤습니다(키보드 방향키와 마우스로 상호작용 가능해요)
+                (과제#3)<br>움직이는 캐리커처
             </a>
         </div>
 
     </section>
+
 </body>
-
 </html>
-
-
